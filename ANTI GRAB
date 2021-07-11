@@ -1,0 +1,9 @@
+local Character = game:GetService("Players").LocalPlayer.Character
+Character.DescendantAdded:Connect(function(A_1)
+    wait(2)
+    if A_1.Name == "Grip" then
+        Character:Destroy()
+        wait(7)
+        game:GetService("TeleportService"):Teleport(6737540754)
+    end
+end)
